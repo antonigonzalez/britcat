@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Britcat.com</title>
+
+<link href="estilo.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+
+</style>
+<meta content=""/>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<meta content="Global" name="distribution"/>
+<meta content="width=device-width, initial-scale=1" name="viewport">
+
+<script src="vid/flowplayer-3.1.4.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+
+	$("#feedback_form").submit(function(e) {
+	  e.preventDefault();
+
+	  $form = $(this);
+
+	  $.ajax({
+		type: "POST",
+		url:  "https://j61ghlx31h.execute-api.eu-west-2.amazonaws.com/Testing/feedback",
+		data: $form.serialize(),
+		success: function(data) {
+		  //alert(data);
+
+		 var container = $("#feedback").find("div.container-fluid");
+		  container.empty();
+		  container.append("<h2>" + data + "</h2>");
+		},
+		dataType: 'json'
+	  });
+	});
+  });
+</script>
+
+
+</head>
+
+<body id="home">
+
+
+
+  <header>
+
+    <div class="navmain">
+
+         <div class="navbar-logo">
+              <img src="img/tonycara-1.jpg" alt="This is me" style= "border-radius: 50%" width= "100" height= "100"/>
+              <a class="navbar-brand" href="index.html"><h1>Tony <span class="subhead">Gonzalez</span></h1></a>
+         </div><!-- navbar-logo -->
+
+
+           <div class="navbar_right">
+             <ul>
+               <li> <a href="index.html"> Home</a> <li>
+               <li> <a href="architecture.html"> Architecture</a>  </li>
+               <li> <a class="active" href="feedback.html">Feedback</a> </li>
+             </ul>
+           </div> <!-- navbar-right -->
+     </div> <!-- navmain -->
+
+  </header> <!-- header -->
+
+<div class="main_section_feedback">
+<h2>
+  Very soon you will see your feedback form here
+<h2>
+
+ <div id="image_div"><img src="img/under-construction.jpg" alt="Under contruction page"></div>
+
+</div><!-- main_section_feedback-->
+
+
+
+       <div id="footer">
+
+         <p>Copyright 2020 - britcat.com - All Rights Reserved</p>
+         <a href="https://www.linkedin.com/in/tonygonzalez67/" target="_blank"><img src="img/LinkedIn_logo_1.png" alt="LinkedIn logo" style="width:30px;height=30px;"></a>
+
+
+      </div> <!-- footer -->
+
+
+
+
+</div> <!-- wrapper -->
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script>
+function submitUserForm() {
+    var response = grecaptcha.getResponse();
+    if(response.length == 0) {
+        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+        return false;
+    }
+    return true;
+}
+
+function verifyCaptcha() {
+    document.getElementById('g-recaptcha-error').innerHTML = '';
+}
+</script>
+
+</body>
+
+</html>

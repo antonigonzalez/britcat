@@ -1,0 +1,416 @@
+/* BASIC*/
+
+a, a:link, a:visited, a:focus, a:hover, a:active{
+
+  text-decoration:none;
+  cursor: pointer;
+}
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700" rel="stylesheet">
+
+body {
+-x-system-font:none;
+color:#000000;
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+font-size:1em;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+//font-weight:300;
+line-height:1.5;
+margin: 0px;
+background-color: #fafafa;
+width: 100%;
+height: auto; min-height: 100%;
+display: flex;
+flex-direction: column;
+box-sizing: border-box;
+}
+
+h1, p, h2, h3, h4, h5, h6 {
+ font-family: 'Abril Fatface', serif;
+}
+
+
+html, body, #wrap {height: 100%;}
+
+/**  Page **/
+.page {
+  padding: 50px 0;
+}
+
+.page h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header{
+ margin-bottom: 0px;
+ background: white;
+}
+header .navbar-logo {
+  display:flex;
+  //background: url(/img/meagain.jpg);
+  //background-repeat: no-repeat;
+  margin: 15px 20px 10px 100px;
+  //height: auto;
+
+  width: 200px;
+  padding :10px;
+  float: left;
+  margin-left: 200px;
+}
+
+
+header .navbar-brand h1 {
+  color: green;
+  margin: 0;
+  font-size: 3em;
+  font-weight: 400;
+  padding-left: 20px;
+}
+
+header .navbar-brand span.subhead {
+  display: block;
+  font-family: "Roboto Slab", serif;
+  font-size: .6em;
+  font-weight: 100;
+}
+
+.navmain {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+
+
+margin-bottom:1.5em;
+overflow:hidden;
+padding:1.5em 0 2em;
+
+
+}
+
+
+
+.navbar_right{
+
+  width: 400px;
+  margin-left: 1000px;
+  margin-right: 0px;
+  padding: 10px;
+
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+li {
+  float: left;
+
+}
+
+
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Abril Fatface', serif;
+  font-size: 1.5em;
+}
+
+li a:hover:not(.active) {
+  color: green;
+
+}
+
+
+.active {
+ border-bottom: 4px solid #EEC856;
+ font-weight:700;
+ }
+
+.internal_links{
+  color: red;
+}
+
+/* architecture page CSS */
+
+
+.main_section_architecture{
+   width: 1200px;
+   margin:0 auto;
+
+}
+
+.current_architecture{
+  width: 808px;
+  margin:0 auto;
+  float:left;
+}
+
+.future_plans{
+  float: right;
+  width: 300px;
+  margin:0 auto;
+
+}
+
+
+/* feedback_form page CSS */
+
+.main_section_feedback{
+   width: 700px;
+   margin:0 auto;
+   margin-bottom: 300px;
+}
+
+
+
+/* main content */
+
+.main_section{
+  position: relative;
+  margin: 0 auto;
+}
+
+.my_introduction{
+         position: absolute;
+         //bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+         right: 5%;
+         bottom: 200px;
+         background: rgb(0, 0, 0); /* Fallback color */
+         background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+         color: #f1f1f1; /* Grey text */
+         width: 30%; /* Full width */
+         font-family: 'Abril Fatface', serif;
+         padding-left: 20px;
+         padding-right: 20px
+}
+
+#image_div img {
+  			/* Set rules to fill background */
+
+      min-height: 100%
+			min-width: 3000px;
+
+			/* Set up proportionate scaling */
+			width: 100%;
+			height: auto;
+
+			/* Set up positioning */
+
+}
+
+/*
+@media screen and (max-width: 3000px){
+			#image_div img {
+				left: 50%;
+				margin-left: -512px; }
+}
+
+*/
+
+.list_of_things .my_list{
+  list-style-type: disc;
+  float: none;
+}
+
+/*
+Animation on index file
+
+*/
+
+.mySlides {display:none;}
+.w3-animate-fading{animation:fading 4s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+
+
+a img 	{ 	border:0 }
+a:active { 	outline:none; }
+:focus   { -moz-outline-style:none; }
+
+.clear { clear: both;
+
+}
+
+
+
+
+
+
+/* FOOTER STYLING*/
+
+#footer{
+ background:#3e25ab url(img/mediotono.png) repeat-x scroll 0 0;
+ //background: blue;
+ padding-top: 5px;
+ margin-top: 0px;
+ color: white;
+ //position: absolute;
+ height: 42px;
+ top: 830px;
+ width: 100%;
+ flex-shrink: 0;
+ float: left;
+}
+
+#footer p{
+ width: 350px;
+ margin-left: 550px;
+ margin-top: 6px;
+ float: left;
+
+}
+
+#micara{
+  position: absolute;
+  background-image: url(img/cap.png);
+ background-repeat: no-repeat;
+ width: 129px;
+ height: 78px;
+ left: 750px;
+ bottom: 900px;
+}
+
+
+
+
+/**  feedback page **/
+
+.page {
+    padding: 50px 0;
+}
+
+.page h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+
+}
+
+.form-container{
+    margin-left: 25%;
+    width: 50%;
+
+
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
+}
+
+#feedback_form {
+    display: block;
+    margin-top: 0em;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.nameemail{
+    width: 50%;
+    float: left;
+
+}
+.onlyname{
+  width: 90%;
+
+}
+.form-control {
+    display: block;
+    width: 100%;
+
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.submit_but {
+    width: 100%;
+    height: 30px;
+}
+
+/**  feedback page **/
+
+#wrapper {
+{
+  position:relative;
+  width:100%; margin:0; padding:0;
+  //border: 3px solid #73AD21;
+ }
+
+#content {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     outline: 0;
+     font-size: 100%;
+     vertical-align: baseline;
+     background: transparent;
+ }
+
+ #row_1 .row-overlay {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+#container_12 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
+.container_12 .grid_8 {
+    width: 770px;
+    display: inline;
+float: left;
+position: relative;
+margin-left: 15px;
+margin-right: 15px;
+}
+
+.container_12 .grid_4 {
+    width: 370px;
+    display: inline;
+//float: left;
+position: relative;
+margin-left: 15px;
+margin-right: 15px;
+}

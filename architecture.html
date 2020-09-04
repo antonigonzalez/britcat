@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Britcat.com</title>
+
+<link href="estilo.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+
+
+
+
+
+</style>
+
+<script src="vid/flowplayer-3.1.4.min.js"></script>
+
+
+</head>
+
+<body id="myabout">
+
+
+  <header>
+
+    <div class="navmain">
+
+         <div class="navbar-logo">
+              <img src="img/tonycara-1.jpg" alt="This is me" style= "border-radius: 50%" width= "100" height= "100"/>
+              <a class="navbar-brand" href="index.html"><h1>Tony <span class="subhead">Gonzalez</span></h1></a>
+         </div><!-- navbar-logo -->
+
+
+           <div class="navbar_right">
+             <ul>
+               <li> <a href="index.html"> Home</a> <li>
+               <li> <a class="active" href="architecture.html"> Architecture</a>  </li>
+               <li> <a href="feedback.html">Feedback</a> </li>
+             </ul>
+           </div> <!-- navbar-right -->
+     <div> <!-- navmain -->
+
+  </header>
+
+
+
+
+  <div class="main_section_architecture">
+        <div class="current_architecture">
+          <h3>This the current architecture of my site </h3>
+        <p>
+          There are a lots of icons on this page but it is not difficult to explain what I try to do:
+        </p>
+        <ol class = "my_list">
+          <li style="list-style-type: disc">All the files in this website are hosted in S3. So the user when goes to britcat. com is actually pulling those
+            files from there.</li><br>
+          <li style="list-style-type: disc">The feedback page contains a form with a submit button. The submit button connects via the Amazon API gateway
+            with a Lambda function that takes the data from the form.</li><br>
+          <li style="list-style-type: disc">The feedback page contains a form with a submit button. The submit button connects via the Amazon API gateway
+            with two lambda functions that takes the data from the form.</li><br>
+          <li style="list-style-type: disc">One Lambda function connects to the AWS SNS service that in turn sends an email to the business owner
+            -me in this case-. </li><br>
+
+       </ol>
+       <br>
+
+        <p> I am having trouble connecting the reCaptcha Form with the Lambda function so that's why I have decided to hide the feedback page for now.</p>
+
+        <div id="image_div"><img src="img/my-aws-architecture.png" alt="AWS architecture"></div>
+
+      </div>
+
+      <div class="future_plans">
+        <h2> Future plans </h2>
+        <p>Upload all my files into GitHub, connect GitHub with AWS Amplify so that I have continuos deployment and include as well Amazon Cognito for user management and authentication.</p>
+
+      </div>
+
+  </div>
+
+
+
+
+
+
+<div id="footer">
+
+<p>Copyright 2020 - britcat.com - All Rights Reserved</p>
+<a href="https://www.linkedin.com/in/tonygonzalez67/" target="_blank"><img src="img/LinkedIn_logo_1.png" alt="LinkedIn logo" style="width:30px;height=30px;"></a>
+
+
+</div>
+
+</div>
+
+
+
+	<script language="JavaScript">
+       flowplayer("player", "vid/flowplayer-3.1.5.swf");
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
