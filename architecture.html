@@ -39,7 +39,7 @@
                <li> <a href="feedback.html">Feedback</a> </li>
              </ul>
            </div> <!-- navbar-right -->
-     <div> <!-- navmain -->
+    </div> <!-- navmain -->
 
   </header>
 
@@ -52,20 +52,22 @@
         <p>
           There are a lots of icons on this page but it is not difficult to explain what I try to do:
         </p>
+        
         <ol class = "my_list">
-          <li style="list-style-type: disc">All the files in this website are hosted in S3. So the user when goes to britcat. com is actually pulling those
-            files from there.</li><br>
-          <li style="list-style-type: disc">The feedback page contains a form with a submit button. The submit button connects via the Amazon API gateway
-            with a Lambda function that takes the data from the form.</li><br>
-          <li style="list-style-type: disc">The feedback page contains a form with a submit button. The submit button connects via the Amazon API gateway
-            with two lambda functions that takes the data from the form.</li><br>
-          <li style="list-style-type: disc">One Lambda function connects to the AWS SNS service that in turn sends an email to the business owner
-            -me in this case-. </li><br>
-
+          <li style="list-style-type: disc">All the files in this website are hosted in S3. So the user when goes to britcat. com is actually pulling those files from there.</li><br>
+          <li style="list-style-type: disc">The feedback page contains a form with a submit button. The submit button connects via the Amazon API gateway with a Lambda function that takes the data from the form.</li><br>
+          <li style="list-style-type: disc">One Lambda function connects to the AWS SNS service that in turn sends an email to me </li> <br>
+          <li style="list-style-type: disc">And another Lambda function is connected to an Amazon DynamoDB where emails will be stored. </li> <br>
+         
        </ol>
        <br>
+      <p>
+        And this is the diagram of my site:<br>
+        
 
-        <p> I am having trouble connecting the reCaptcha Form with the Lambda function so that's why I have decided to hide the feedback page for now.</p>
+     </p>
+
+        
 
         <div id="image_div"><img src="img/my-aws-architecture.png" alt="AWS architecture"></div>
 
@@ -92,7 +94,7 @@
 
 </div>
 
-</div>
+
 
 
 
