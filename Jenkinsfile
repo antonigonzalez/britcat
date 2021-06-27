@@ -1,10 +1,13 @@
-pipeline { 
-    agent any 
-    
+pipeline {
+    agent any
     stages {
-        stage('Uploading to S3') { 
-            steps { 
-                sh 'aws s3 cp . s3://britcat.com --recursive --acl public-read' 
+        stage('hello AWS') {
+            steps {
+                withAWS(credentials: 'aws-personal', region: 'eu-west-2') {
+                    sh 'echo "hello KB">hello.txt'
+                    s3Upload acl: 'Private', bucket: 'britcat.com', file: 'hello.txt'
+                    
+                }
             }
         }
     }
